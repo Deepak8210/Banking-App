@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon.png" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="welcome-message">Log In To Get Started</div>
+            <img class="app-logo" src="./images/save-money.png" />
+            <form class="authentication d-flex align-items-center">
+                <input type="text" placeholder="USER" class="login-user">
+                <input type="text" placeholder="PIN" class="login-pin">
+                <button class="login-btn">&#8594;</button>
+            </form>
+        </nav>
+
+        <!-- content section -->
+        <div class="content">
+            <div class="currentBalance-section d-flex justify-content-between">
+                <div class="current-balance-title">
+                    <p class="current-title">Current balance</p>
+                    <p class="current-date-time">As of <span class="date">01/02/2023</span>
+
+                </div>
+
+                <h3 class="current-account-balance"><span class="label-balance">00,000</span>₹</h3>
+            </div>
+
+            <div class="transactions-dept d-flex justify-content-center">
+
+                <div class="transactions">
+                    <div class="transaction d-flex justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="type--deposit">deposit</p>
+                            <p class="transaction-date">22/05/2023</p>
+                        </div>
+
+                        <p class="transaction-amount d-flex align-items-center"><span>550</span>₹</p>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="offerings-dept d-flex flex-column">
+                    <div class="money-transfer">
+                        <p class="offering-title">Transfer money</p>
+                        <div class="d-flex transfer-input">
+                            <input type="text" class="transfer-account">
+                            <input type="number" class="transfer-amount">
+                            <button class="transfer-btn">&#8594;</button>
+                        </div>
+                        <div class="d-flex text-font">
+                            <p class="transfer-text">transfer to</p>
+                            <p class="amount-text">Amount</p>
+                        </div>
+
+                    </div>
+                    <div class="loan">
+                        <p class="offering-title">Request Loan</p>
+                        <div class="d-flex loan-input">
+                            <input type="text" class="loan-amount">
+                            <button class="loan-btn">&#8594;</button>
+                        </div>
+
+
+                        <p class="text-font amount-text ">Amount</p>
+
+                    </div>
+                    <div class="account-closing">
+                        <p class="offering-title">Close Account</p>
+                        <div class="d-flex close-input">
+                            <input type="text" class="closing-user">
+                            <input type="text" class="closing-pin">
+                            <button class="closing-btn">&#8594;</button>
+                        </div>
+                        <div class="d-flex text-font">
+                            <p class="user">Confirm-user</p>
+                            <p class="pin">Confirm pin</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="total-transactions d-flex px-5 justify-content-between">
+                <div class="total-details d-flex">
+                    <p>IN <span class="total-deposit">0000</span></p>
+                    <p>OUT <span class="total-withdrawl">0000</span></p>
+                    <p>INTEREST <span class="total-interest">000</span></p>
+                    <button class="sort">sort &#8595;</button>
+                </div>
+                <p>You will be logged out in <span class="timer"></span></p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

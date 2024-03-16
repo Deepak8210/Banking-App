@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: beige;
+}
+
+.timer {
+  font-weight: bold;
+}
+.welcome-message {
+  font-weight: bold;
+}
+.app-logo {
+  width: 3rem;
+  height: 3rem;
+}
+.authentication input {
+  width: 10rem;
+  border-radius: 1.5rem;
+  border: none;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+
+  margin: 0 0.5rem;
+}
+.login-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* content style */
+.content {
+  width: 80%;
+  margin: 2rem auto;
+  visibility: hidden;
+}
+
+.current-title {
+  font-weight: bold;
+  color: rgb(128, 126, 126);
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.current-date-time {
+  font-size: 0.7rem;
+  color: rgb(153, 152, 152);
+}
+.current-account-balance {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(128, 126, 126);
+}
+
+/*transaction-dept*/
+.transactions-dept {
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.transactions {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #a8e063;
+  max-height: 360px;
+  overflow-y: scroll;
+}
+.transactions::-webkit-scrollbar {
+  display: none;
+}
+.transaction {
+  padding: 0.5rem 1rem;
+  margin: 0.25rem 0;
+  background-color: azure;
+}
+.transaction p {
+  margin: 0 0.5rem;
+}
+.transaction-amount {
+  text-align: right;
+}
+.type--desposit,
+.type--withdrawl {
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+}
+.offerings-dept {
+  width: 40%;
+  gap: 1rem;
+}
+.money-transfer {
+  background: linear-gradient(-45deg, #f7971e, #ffd200);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.loan {
+  background: linear-gradient(-45deg, #45b649, #dce35b);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.account-closing {
+  background: linear-gradient(-45deg, #cb2d3e, #ef473a);
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+/*Transfer input*/
+.transfer-input,
+.loan-input,
+.close-input {
+  gap: 0.5rem;
+  align-items: center;
+}
+.offering-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.transfer-input input,
+.loan-input input,
+.close-input input {
+  width: 8rem;
+  height: fit-content;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2rem 0.5rem;
+}
+
+.text-font {
+  font-size: 0.9rem;
+}
+.transfer-input button,
+.loan-input button,
+.close-input button {
+  border: none;
+  background-color: aliceblue;
+  padding: 0 0.8rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.type--deposit {
+  background-image: linear-gradient(#a8e063, #56ab2f);
+  padding: 0 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: whitesmoke;
+}
+.type--withdrawl {
+  background-image: linear-gradient(#cb2d3e, #ef473a);
+  padding: 0 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: whitesmoke;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+.sort {
+  background-color: beige;
+  border: none;
+}
+
+.transfer-text {
+  margin-right: 4rem;
+  margin-top: 0.5rem;
+}
+.amount-text {
+  margin-top: 0.5rem;
+}
+.user {
+  margin-right: 2.8rem;
+  margin-top: 0.5rem;
+}
+.pin {
+  margin-top: 0.5rem;
+}
+
+.total-deposit {
+  color: #56ab2f;
+  font-size: 1.2rem;
+}
+.total-withdrawl {
+  color: #cb2d3e;
+  font-size: 1.2rem;
+}
+.total-interest {
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+.total-transactions {
+  margin-top: 0.5rem;
+}
+.total-details {
+  gap: 0.5rem;
+  width: 50%;
+}
+.total-details p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1023px) {
+  .content {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .total-deposit,
+  .total-withdrawl,
+  .total-interest {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .transactions-dept {
+    flex-direction: column;
+    align-items: center;
+    max-height: 500px;
+  }
+  .transactions {
+    width: 80%;
+  }
+  .offerings-dept {
+    width: 60%;
+  }
+
+  .money-transfer,
+  .loan,
+  .account-closing {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .transactions {
+    width: 90%;
+  }
+  .offerings-dept {
+    width: 90%;
+  }
+  .money-transfer,
+  .loan,
+  .account-closing {
+    padding-left: 1.5rem;
+  }
+}
